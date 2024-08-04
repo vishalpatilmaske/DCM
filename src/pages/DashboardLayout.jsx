@@ -1,8 +1,9 @@
+import { Outlet } from "react-router-dom";
 import Navbar from "../component/dashboard/Navbar.jsx";
 import Sidebar from "../component/dashboard/Sidebar.jsx";
 import "../style/pages/dashboard.css";
 
-const Dashboard = () => {
+const DashboardLayout = () => {
   return (
     <div className="container-fluid">
       <div className="row">
@@ -14,10 +15,11 @@ const Dashboard = () => {
         {/* Main Content */}
         <div className="col-10 container">
           <Navbar />
+          <Outlet />
         </div>
       </div>
     </div>
   );
 };
 
-export default Dashboard;
+export default DashboardLayout;
