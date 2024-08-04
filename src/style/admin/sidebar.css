@@ -1,5 +1,19 @@
 .sidebar {
-  background-color: #161d31;
+  background-color: #222a3f;
   height: 100vh;
   overflow-y: auto;
+}
+
+.dashboard-title {
+  color: #7367f0;
+}
+
+.sidebar-components ul li {
+  padding-left: 0;
+  transition: padding-left 0.3s ease;
+}
+
+.sidebar-components ul li:hover {
+  background-color: #161d31;
+  padding-left: 10px;
 }
