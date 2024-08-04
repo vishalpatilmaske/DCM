@@ -5,7 +5,7 @@ import image from "../../assets/admin/DSC_2377.JPG";
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark container mt-3 rounded p-2">
+      <nav className="navbar navbar-expand-lg navbar-dark container mt-3 rounded p-2 shadow-lg">
         <button
           className="navbar-toggler"
           type="button"

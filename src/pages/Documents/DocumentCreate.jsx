@@ -1,8 +1,10 @@
+import React from "react";
 const DocumentCreate = () => {
-    return (
-      <h2>DocumentCreate</h2>
-    );
-  };
-  
-  export default DocumentCreate;
-  
+  return (
+    <div>
+      <h1>Create Document</h1>
+    </div>
+  );
+};
+
+export default DocumentCreate;

@@ -3,6 +3,7 @@ import "../../style/admin/sidebar.css";
 import { IoHomeOutline } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+
 const Sidebar = () => {
   const navigate = useNavigate();
   return (
@@ -23,7 +24,7 @@ const Sidebar = () => {
                   <p
                     className="mb-0 "
                     onClick={() => {
-                      navigate("/dashboard");
+                      navigate("/admin/dashboard");
                     }}
                   >
                     Dashboard
@@ -40,7 +41,7 @@ const Sidebar = () => {
                   <p
                     className="mb-0"
                     onClick={() => {
-                      navigate("/documents");
+                      navigate("/admin/documents");
                     }}
                   >
                     Documents
@@ -57,7 +58,7 @@ const Sidebar = () => {
                   <p
                     className="mb-0"
                     onClick={() => {
-                      navigate("/users");
+                      navigate("/admin/users");
                     }}
                   >
                     Users
@@ -74,7 +75,7 @@ const Sidebar = () => {
                   <p
                     className="mb-0"
                     onClick={() => {
-                      navigate("/profile");
+                      navigate("/admin/profile");
                     }}
                   >
                     Profile
