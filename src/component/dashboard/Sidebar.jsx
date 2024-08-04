@@ -23,7 +23,7 @@ const Sidebar = () => {
                   <p
                     className="mb-0 "
                     onClick={() => {
-                      navigate("/dashboard-layout/dashboard");
+                      navigate("/dashboard");
                     }}
                   >
                     Dashboard
@@ -40,7 +40,24 @@ const Sidebar = () => {
                   <p
                     className="mb-0"
                     onClick={() => {
-                      navigate("/dashboard-layout/users");
+                      navigate("/documents");
+                    }}
+                  >
+                    Documents
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className="d-flex align-items-center mb-3 p-2">
+                <div className="icon me-3">
+                  <FaRegUser size={23} />
+                </div>
+                <div className="text">
+                  <p
+                    className="mb-0"
+                    onClick={() => {
+                      navigate("/users");
                     }}
                   >
                     Users
@@ -57,7 +74,7 @@ const Sidebar = () => {
                   <p
                     className="mb-0"
                     onClick={() => {
-                      navigate("/dashboard-layout/profile");
+                      navigate("/profile");
                     }}
                   >
                     Profile
