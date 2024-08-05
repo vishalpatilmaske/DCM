@@ -24,7 +24,7 @@ const Sidebar = () => {
                   <p
                     className="mb-0 "
                     onClick={() => {
-                      navigate("/admin/dashboard");
+                      navigate("/dashboard");
                     }}
                   >
                     Dashboard
@@ -41,7 +41,7 @@ const Sidebar = () => {
                   <p
                     className="mb-0"
                     onClick={() => {
-                      navigate("/admin/documents");
+                      navigate("/documents");
                     }}
                   >
                     Documents
@@ -58,7 +58,7 @@ const Sidebar = () => {
                   <p
                     className="mb-0"
                     onClick={() => {
-                      navigate("/admin/users");
+                      navigate("/users");
                     }}
                   >
                     Users
@@ -75,7 +75,7 @@ const Sidebar = () => {
                   <p
                     className="mb-0"
                     onClick={() => {
-                      navigate("/admin/profile");
+                      navigate("/profile");
                     }}
                   >
                     Profile

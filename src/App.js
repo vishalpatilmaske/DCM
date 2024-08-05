@@ -1,4 +1,6 @@
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
@@ -16,16 +18,14 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/admin" element={<Layout />}>
-          <Route path="dashboard" element={<Dashboard />} />
-          <Route path="users" element={<Users />} />
-          <Route path="profile" element={<Profile />} />
-          <Route path="documents" element={<DocumentsList />} />
-          <Route path="documents-create" element={<DocumentCreate />} />
-          <Route path="documents-view" element={<DocumentView />} />
-          <Route path="documents-pdf" element={<DocumentPdfView />} />
-        </Route>
+        <Route path="/" exact element={<Home />} />
+        <Route path="dashboard" element={<Layout ><Dashboard /> </Layout >} />
+        <Route path="users" element={<Layout ><Users /></Layout>} />
+        <Route path="profile" element={<Layout ><Profile /></Layout>} />
+        <Route path="documents" element={<Layout ><DocumentsList /></Layout>} />
+        <Route path="documents-create" element={<Layout ><DocumentCreate /></Layout>} />
+        <Route path="documents-view" element={<Layout ><DocumentView /> </Layout>} />
+        <Route path="documents-pdf" element={<Layout><DocumentPdfView /></Layout>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

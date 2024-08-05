@@ -5,7 +5,7 @@ import Navbar from "../component/dashboard/Navbar";
 import "../style/pages/dashboard.css";
 import { Outlet } from "react-router-dom";
 
-const Layout = () => {
+const Layout = ({children}) => {
   return (
     <div className="container-fluid">
       <div className="row">
@@ -14,7 +14,7 @@ const Layout = () => {
         </div>
         <div className="col-10 mt-2 ">
           <Navbar />
-          <Outlet />
+         {children}
         </div>
       </div>
     </div>

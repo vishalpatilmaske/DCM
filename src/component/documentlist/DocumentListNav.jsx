@@ -1,5 +1,6 @@
 import React from "react";
 import "../../style/pages/documentlist.css";
+import { Link } from "react-router-dom";
 const DocumentList = () => {
   return (
     <div>
@@ -7,9 +8,9 @@ const DocumentList = () => {
       <div className="d-flex justify-content-between mt-5">
         <h2>Document List</h2>
 
-        <button type="button" className="btn btn-success">
+        <Link to={"/documents-create"} className="btn btn-success">
           New Document
-        </button>
+        </Link>
       </div>
 
       <div className="d-flex justify-content-around mt-2 background p-2 rounded">
