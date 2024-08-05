@@ -8,5 +8,4 @@ const DocumentList = () => {
     </div>
   );
 };
-
 export default DocumentList;
