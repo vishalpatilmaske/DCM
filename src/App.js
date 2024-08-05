@@ -26,6 +26,7 @@ function App() {
           <Route path="documents-view" element={<DocumentView />} />
           <Route path="documents-pdf" element={<DocumentPdfView />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

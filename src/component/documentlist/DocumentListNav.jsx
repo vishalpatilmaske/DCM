@@ -1,7 +1,5 @@
 import React from "react";
 import "../../style/pages/documentlist.css";
-import DocumentListNav from "../../component/documentlist/DocumentListNav";
-
 const DocumentList = () => {
   return (
     <div>
@@ -81,9 +79,6 @@ const DocumentList = () => {
           Export
         </button>
       </div>
-
-      {/* documentlist */}
-      <DocumentListNav />
     </div>
   );
 };
