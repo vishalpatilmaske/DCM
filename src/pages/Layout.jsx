@@ -3,9 +3,8 @@ import React from "react";
 import Sidebar from "../component/dashboard/Sidebar";
 import Navbar from "../component/dashboard/Navbar";
 import "../style/pages/dashboard.css";
-import { Outlet } from "react-router-dom";
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <div className="container-fluid">
       <div className="row">
@@ -14,7 +13,7 @@ const Layout = ({children}) => {
         </div>
         <div className="col-10 mt-2 ">
           <Navbar />
-         {children}
+          {children}
         </div>
       </div>
     </div>

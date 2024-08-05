@@ -2,6 +2,7 @@
   background-color: #222a3f;
   height: 100vh;
   overflow-y: auto;
+  color: white;
 }
 
 .dashboard-title {
