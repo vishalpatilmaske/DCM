@@ -1,86 +1,172 @@
-import React from "react";
-import "../../style/pages/documentlist.css";
-const DocumentList = () => {
+import React, { useState } from "react";
+// Ensure Bootstrap CSS is imported
+
+const DocumentListNav = () => {
+  // State to track the currently active tab
+  const [activeTab, setActiveTab] = useState("pending");
+
   return (
-    <div>
-      {/* Heading of the page */}
-      <div className="d-flex justify-content-between mt-5">
-        <h2>Document List</h2>
-
-        <button type="button" className="btn btn-success">
-          New Document
-        </button>
-      </div>
-
-      <div className="d-flex justify-content-around mt-2 background p-2 rounded">
-        <div className="dropdown-center">
-          <button
-            className="btn btn-secondary dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
+    <div className="container-fluid">
+      {/* Navigation tabs */}
+      <ul className="nav nav-tabs flex-row ">
+        {/*  Pending */}
+        <li className="nav-item">
+          <a
+            className={`nav-link ${activeTab === "pending" ? "active" : ""}`}
+            aria-current="page"
+            href="#"
+            onClick={() => setActiveTab("pending")}
           >
-            Document
-          </button>
-          <ul className="dropdown-menu">
-            <li>
-              <a className="dropdown-item" href="#">
-                Document 1
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Document 2
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Document 3
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="dropdown-center">
-          <button
-            className="btn btn-secondary dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
+            Pending
+          </a>
+        </li>
+        {/* Conpleted */}
+        <li className="nav-item">
+          <a
+            className={`nav-link ${activeTab === "completed" ? "active" : ""}`}
+            href="#"
+            onClick={() => setActiveTab("completed")}
           >
-            Format Name
-          </button>
-          <ul className="dropdown-menu">
-            <li>
-              <a className="dropdown-item" href="#">
-                Document 1
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Document 2
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Document 3
-              </a>
-            </li>
-          </ul>
+            Conpleted
+          </a>
+        </li>
+        {/* Deactiveted */}
+        <li className="nav-item">
+          <a
+            className={`nav-link ${activeTab === "deactivetd" ? "active" : ""}`}
+            href="#"
+            onClick={() => setActiveTab("deactivetd")}
+          >
+            Deactivated
+          </a>
+        </li>
+        {/* Task  */}
+        <li className="nav-item">
+          <a
+            className={`nav-link ${activeTab === "task" ? "active" : ""} `}
+            href="#"
+            onClick={() => setActiveTab("task")}
+          >
+            Task
+          </a>
+        </li>
+        {/* Distributed */}
+        <li className="nav-item">
+          <a
+            className={`nav-link ${
+              activeTab === "distributed" ? "active" : ""
+            } `}
+            href="#"
+            onClick={() => setActiveTab("distributed")}
+          >
+            Distributed
+          </a>
+        </li>
+        {/* In Process Report */}
+        <li className="nav-item">
+          <a
+            className={`nav-link ${
+              activeTab === "in_process_report" ? "active" : ""
+            } `}
+            href="#"
+            onClick={() => setActiveTab("in_process_report")}
+          >
+            In Process Report
+          </a>
+        </li>
+        {/* Pending Feedback Report */}
+        <li className="nav-item">
+          <a
+            className={`nav-link ${
+              activeTab === "pending_feedback_report" ? "active" : ""
+            } `}
+            href="#"
+            onClick={() => setActiveTab("pending_feedback_report")}
+          >
+            Pending Feedback Report
+          </a>
+        </li>
+      </ul>
+      {/* Conditionally render the card based on the active tab */}
+      {activeTab === "pending" && (
+        <div className="card mb-3">
+          <div className="card-body">
+            <h5 className="card-title">Active Tab Description</h5>
+            <p className="card-text">
+              Description for the Active tab. This provides additional
+              information related to the first tab.
+            </p>
+          </div>
         </div>
-        <div className="filter">
-          <button type="button" className="btn btn-success me-3">
-            Filter
-          </button>
-          <button type="button" className="btn btn-success">
-            Reset Filter
-          </button>
+      )}
+      {activeTab === "completed" && (
+        <div className="card mb-3">
+          <div className="card-body">
+            <h5 className="card-title">Link 1 Description</h5>
+            <p className="card-text">
+              Description for Link 1. This provides additional information
+              related to the first link tab.
+            </p>
+          </div>
         </div>
-        <button type="button" className="btn btn-success">
-          Export
-        </button>
-      </div>
+      )}
+      {activeTab === "deactivetd" && (
+        <div className="card mb-3">
+          <div className="card-body">
+            <h5 className="card-title">Link 2 Description</h5>
+            <p className="card-text">
+              Description for Link 2. This provides additional information
+              related to the second link tab.
+            </p>
+          </div>
+        </div>
+      )}
+      {activeTab === "task" && (
+        <div className="card mb-3">
+          <div className="card-body">
+            <h5 className="card-title">Disabled Tab Description</h5>
+            <p className="card-text">
+              Description for the Disabled tab. This provides additional
+              information related to the disabled tab.
+            </p>
+          </div>
+        </div>
+      )}
+      {activeTab === "distributed" && (
+        <div className="card mb-3">
+          <div className="card-body">
+            <h5 className="card-title">Disabled Tab Description</h5>
+            <p className="card-text">
+              Description for the Disabled tab. This provides additional
+              information related to the disabled tab.
+            </p>
+          </div>
+        </div>
+      )}
+      {activeTab === "in_process_report" && (
+        <div className="card mb-3">
+          <div className="card-body">
+            <h5 className="card-title">Disabled Tab Description</h5>
+            <p className="card-text">
+              Description for the Disabled tab. This provides additional
+              information related to the disabled tab.
+            </p>
+          </div>
+        </div>
+      )}
+      {activeTab === "pending_feedback_report" && (
+        <div className="card mb-3">
+          <div className="card-body">
+            <h5 className="card-title">Disabled Tab Description</h5>
+            <p className="card-text">
+              Description for the Disabled tab. This provides additional
+              information related to the disabled tab.
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
-export default DocumentList;
+export default DocumentListNav;
