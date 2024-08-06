@@ -1,5 +1,5 @@
 .background {
-  background-color: #222a3f;
+  background-color: #283046;
 }
 .tab-content {
   background-color: #222a3f;
@@ -7,4 +7,25 @@
 hr {
   padding: 0;
   margin: 0;
+}
+/* Reset styles for <li> tags */
+.document-nav .nav-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Optionally reset link styles within <li> */
+.nav-item .nav-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #7367f0;
+  background-color: #212529;
+  border-radius: 10px 10px 0 0;
 }
