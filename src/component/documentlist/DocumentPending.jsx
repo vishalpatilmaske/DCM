@@ -1,5 +1,5 @@
 import React from "react";
-
+import Documents from "./Documents";
 const DocumentPending = () => {
   return (
     <div>
@@ -17,52 +17,54 @@ const DocumentPending = () => {
           </button>
         </form>
       </div>
-      <div className="container-fluid mt-2 background rounded pb-1">
+      <div className="container-fluid mt-2 background rounded-top pb-1">
         {/* Navigation tabs */}
-        <ul className="nav flex-row document-nav justify-content-between">
+        <ul className="nav flex-row justify-content-between">
           {/*  Pending */}
-          <li className="nav-item">
+          <li className="nav-item color">
             <a className={`nav-link `} aria-current="page" href="#">
               Doc No.
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item color">
             <a className={`nav-link `} aria-current="page" href="#">
               Title
             </a>
           </li>{" "}
-          <li className="nav-item">
+          <li className="nav-item color">
             <a className={`nav-link `} aria-current="page" href="#">
               Department
             </a>
           </li>{" "}
-          <li className="nav-item">
+          <li className="nav-item color">
             <a className={`nav-link `} aria-current="page" href="#">
               Format Name
             </a>
           </li>{" "}
-          <li className="nav-item">
+          <li className="nav-item color">
             <a className={`nav-link `} aria-current="page" href="#">
               Version No
             </a>
           </li>{" "}
-          <li className="nav-item">
+          <li className="nav-item color">
             <a className={`nav-link `} aria-current="page" href="#">
               Prepade By
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item color">
             <a className={`nav-link `} aria-current="page" href="#">
               Status
             </a>
           </li>{" "}
-          <li className="nav-item">
+          <li className="nav-item color">
             <a className={`nav-link `} aria-current="page" href="#">
               Action
             </a>
           </li>
         </ul>
       </div>
+      <hr />
+      <Documents />
     </div>
   );
 };

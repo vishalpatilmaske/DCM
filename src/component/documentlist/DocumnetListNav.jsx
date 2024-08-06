@@ -14,11 +14,11 @@ const DocumentListHeader = () => {
   return (
     <div className="container-fluid mt-5 background rounded pb-1 pt-2">
       {/* Navigation tabs */}
-      <ul className="nav flex-row document-nav">
+      <ul className="nav flex-row">
         {/*  Pending */}
         <li className="nav-item ">
           <a
-            className={`nav-link ${activeTab === "pending" ? "active" : ""}`}
+            className={`nav-link ${activeTab === "pending" ? "active" : ""} `}
             aria-current="page"
             href="#"
             onClick={() => setActiveTab("pending")}
@@ -26,7 +26,7 @@ const DocumentListHeader = () => {
             Pending
           </a>
         </li>
-        {/* Conpleted */}
+        {/* Completed */}
         <li className="nav-item">
           <a
             className={`nav-link ${activeTab === "completed" ? "active" : ""}`}
