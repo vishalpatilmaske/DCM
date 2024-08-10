@@ -8,8 +8,8 @@ const DocumentList = () => {
       <div className="d-flex justify-content-between mt-5">
         <h2>Document List</h2>
 
-        <Link to={"/documents-create"} className="btn btn-success">
-          New Document
+        <Link to={"/documents-create"}>
+          <button className="btn btn-success">New Document</button>
         </Link>
       </div>
 

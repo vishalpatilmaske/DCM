@@ -34,3 +34,7 @@ hr {
 .color .nav-link {
   color: #17a2b8;
 }
+
+.view {
+  margin-inline: 5px;
+}

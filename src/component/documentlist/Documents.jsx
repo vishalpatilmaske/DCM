@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { IoEyeOutline } from "react-icons/io5";
+import { MdOutlineDownload } from "react-icons/md";
 
 const Documents = () => {
   return (
@@ -43,7 +46,14 @@ const Documents = () => {
         </li>{" "}
         <li className="nav-item">
           <a className={`nav-link `} aria-current="page" href="#">
-            Action
+            <Link to="/documents-view">
+              <IoEyeOutline />
+            </Link>
+            <Link to="/documents-pdf">
+              <IoEyeOutline className="view" />
+            </Link>
+
+            <MdOutlineDownload />
           </a>
         </li>
       </ul>

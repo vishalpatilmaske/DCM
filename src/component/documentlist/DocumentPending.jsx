@@ -1,5 +1,6 @@
 import React from "react";
 import Documents from "./Documents";
+
 const DocumentPending = () => {
   return (
     <div>
@@ -12,7 +13,7 @@ const DocumentPending = () => {
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success" type="submit">
+          <button class="btn btn-outline-info" type="submit">
             Search
           </button>
         </form>
