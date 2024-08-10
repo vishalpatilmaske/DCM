@@ -4,7 +4,7 @@ import DocumentListHeader from "../../component/documentlist/DocumentListHeader"
 
 const DocumentList = () => {
   return (
-    <div className="p-2">
+    <div className="p-1">
       <DocumentListHeader />
       <DocumentListNav />
     </div>

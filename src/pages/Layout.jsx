@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
           <Sidebar />
         </div>
         <div className="col-10 mt-2 ">
-          <Navbar />
+          {/* <Navbar /> */}
           {children}
         </div>
       </div>

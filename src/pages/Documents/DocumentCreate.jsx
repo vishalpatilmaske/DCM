@@ -1,6 +1,8 @@
 import React from "react";
 import "../../style/pages/documentcreate.css";
 import { CgAsterisk } from "react-icons/cg";
+import { CKEditor } from "ckeditor4-react";
+import Editor from "../../component/Editor";
 
 const DocumentCreate = () => {
   return (
@@ -163,6 +165,9 @@ const DocumentCreate = () => {
               Upload Docx File
             </label>
             <input type="file" className="form-control" id="uploadDocument" />
+          </div>
+          <div className="col-md-12">
+            <Editor />
           </div>
         </form>
       </div>

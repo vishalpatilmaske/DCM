@@ -5,15 +5,14 @@ const DocumentList = () => {
   return (
     <div>
       {/* Heading of the page */}
-      <div className="d-flex justify-content-between mt-5">
+      <div className="d-flex justify-content-between mt-1">
         <h2>Document List</h2>
-
         <Link to={"/documents-create"}>
           <button className="btn btn-success">New Document</button>
         </Link>
       </div>
 
-      <div className="d-flex justify-content-around mt-2 background p-2 rounded">
+      {/* <div className="d-flex justify-content-around mt-2 background p-2 rounded">
         <div className="dropdown-center">
           <button
             className="btn btn-secondary dropdown-toggle"
@@ -79,7 +78,7 @@ const DocumentList = () => {
         <button type="button" className="btn btn-success">
           Export
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

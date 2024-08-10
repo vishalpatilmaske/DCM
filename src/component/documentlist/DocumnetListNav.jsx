@@ -12,7 +12,7 @@ const DocumentListHeader = () => {
   const [activeTab, setActiveTab] = useState("pending");
 
   return (
-    <div className="container-fluid mt-5 background rounded pb-1 pt-2">
+    <div className="container-fluid mt-1 background rounded pb-1 pt-2">
       {/* Navigation tabs */}
       <ul className="nav flex-row">
         {/*  Pending */}
