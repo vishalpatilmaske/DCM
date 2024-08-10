@@ -25,11 +25,12 @@ hr {
 }
 
 .nav-link.active {
-  color: #7367f0;
+  color: #17a2b8;
+  text-align: center;
   background-color: #212529;
   border-radius: 10px 10px 0 0;
 }
 
 .color .nav-link {
-  color: #7367f0;
+  color: #17a2b8;
 }

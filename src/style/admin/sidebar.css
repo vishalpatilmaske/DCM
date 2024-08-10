@@ -1,6 +1,9 @@
 .sidebar {
   background-color: #222a3f;
   height: 100vh;
+  position: fixed;
+  /* top: 0; */
+  /* left: 0; */
   overflow-y: auto;
 }
 

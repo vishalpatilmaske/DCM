@@ -1,0 +1,29 @@
+.asterisk {
+  color: red !important;
+}
+.create-doccument-container {
+  background-color: #222a3f;
+}
+
+.create-doccument-container input:focus {
+  /* border-color: transparent;
+  box-shadow: none; */
+  background-color: #40485d42;
+  color: aliceblue;
+}
+.create-doccument-container input {
+  background-color: #40485d42;
+  color: aliceblue;
+  border-color: #17a2b8;
+}
+
+.create-doccument-container select:focus {
+  background-color: #40485d42;
+  color: aliceblue;
+}
+
+.create-doccument-container select {
+  background-color: #40485d42;
+  color: aliceblue;
+  border-color: #17a2b8;
+}

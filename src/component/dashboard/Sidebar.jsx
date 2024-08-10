@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const Sidebar = () => {
   const navigate = useNavigate();
   return (
-    <div className="sidebar  row">
+    <div className="sidebar row">
       <div>
         <div>
           <h3 className="py-4 dashboard-title">Dashboard</h3>
